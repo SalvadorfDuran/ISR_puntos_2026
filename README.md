@@ -1,18 +1,18 @@
-# Scoreboard Google Sheets
+# Puntos Mate y FQ
 
-Web estática en HTML, CSS y JS que consume una hoja de Google Sheets publicada y muestra un scoreboard competitivo por grupos.
+Web estática en HTML, CSS y JS que consume una hoja de Google Sheets publicada y muestra una tabla de puntos competitiva por grupos.
 
 ## Archivos
 
-- `scoreboard.html`: nueva experiencia con welcome page + ranking competitivo por grupo.
-- `scoreboard.css`: estilos modernos/minimalistas del scoreboard.
+- `index.html`: experiencia principal con welcome page + tabla de puntos por grupo.
+- `scoreboard.css`: estilos modernos/minimalistas de la interfaz principal.
 - `scoreboard.js`: lectura de Google Sheets y cálculo de puntajes totales por `Grupo`.
 - `app.js`: lógica del visualizador original, conservada como referencia técnica.
 - `styles.css`: estilos del visualizador original, conservados como referencia técnica.
 
-## Scoreboard por grupo
+## Tabla de puntos por grupo
 
-La página `scoreboard.html` calcula el puntaje total por grupo usando:
+La página `index.html` calcula el puntaje total por grupo usando:
 
 - `PuntosFQ + PuntosMate` por cada alumno.
 - Agrupación por columna `Grupo`.
@@ -39,11 +39,11 @@ Necesitas un servidor estático (por ejemplo, con Python):
 python -m http.server 5173
 ```
 
-Luego abre: `http://localhost:5173/scoreboard.html`
+Luego abre: `http://localhost:5173/index.html`
 
 Páginas disponibles:
 
-- Scoreboard competitivo: `http://localhost:5173/scoreboard.html`
+- Tabla de puntos: `http://localhost:5173/index.html`
 
 ## Notas
 
